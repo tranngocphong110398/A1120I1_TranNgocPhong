@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhúng JavaScript</title>
+</head>
+<body>
+<!--Bài tập 1: Tạo một trang web với một nút. Chèn mã Javascript vào trong thẻ <button> để hiển thị một lời chào khi người dùng nhấn chuột vào nút đó.-->
+<button type="button" onclick="alert('xin chào');">click me</button>
+<!--Bài tập 2: Tạo một trang web với một nút. Sử dụng thẻ <script> và khai báo một hàm đơn giản. Gọi hàm này khi người dùng nhấn chuột vào nút.-->
+<button type="button" onclick="showMessage();">BaiTap2!</button>
+<script>
+    function showMessage(){
+        alert('Xin chào!');
+    }
+</script>
+<!--Bài tập 3: Hãy tách đoạn mã Javascript ở Bài tập 2 ra một file Javascript riêng và nhúng vào trang HTML.-->
+<button type="button" onclick="showMessage5();">BaiTap3!</button>
+<script src="nhungjavascript.js"></script>
+</body>
+</html>
