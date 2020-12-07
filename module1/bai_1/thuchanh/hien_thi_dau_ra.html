@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển Thị Đầu Ra</title>
+</head>
+<body>
+<!--Hien thi bang alert-->
+<button type="button" onclick="showMessage();">Click Me!</button>
+<script>
+    function showMessage() {
+        alert('Hello brother')
+    }
+</script>
+<!--Hien thi bang document.getElementById-->
+<div id="messageDiv"></div>
+<button type="button";value="ma" onclick="showMessage1();">button2!</button>
+<script>
+    function showMessage1(){
+        document.getElementById('messageDiv').innerHTML = 'Xin chào!';
+    }
+</script>
+<!--&lt;!&ndash;Bài tập 3: Hiển thị kết quả sử dụng hàm document.write():-->
+<button type="button" onclick="showMessage2();">button3!</button>
+<script>
+    function showMessage2(){
+        document.write('Xin chào!');
+    }
+</script>
+<!--Hiển thị kết quả sử dụng hàm console.log():-->
+<button type="button" onclick="showMessage4();">button4 Me!</button>
+<script>
+    function showMessage4(){
+        console.log('Xin chào!');
+    }
+</script>
+</body>
+</html>
