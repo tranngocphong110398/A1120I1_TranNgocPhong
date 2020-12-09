@@ -6,4 +6,7 @@ inputheight=prompt("nhập chiều dài : ");
 width=parseInt(inputwidth);
 height=parseInt(inputheight);
 let area=width*height;
+let area1=width+height;
+
 document.writeln("Diện tích hình chử nhật là : " + area);
+document.writeln("Diện tích hình chử nhật là : " + area1);
