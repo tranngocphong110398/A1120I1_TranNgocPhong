@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Su Dung chuot click</title>
+</head>
+<body>
+<form>
+    <img id="bong" src="../image/ball.png" width="800px" height="800px"/>
+    <p>click button </p>
+    <input type="button" value="click me" onclick="moveRight()">
+    <script>
+        let anh=null;
+        anh=document.getElementById("bong");
+        function init() {
+            anh=document.getElementById("bong");
+            anh.style.position='relative';
+            anh.style.left='0px';
+        }
+        function moveRight() {
+            anh.style.left = parseInt(anh.style.left) + 10 + 'px';
+        }
+        window.onload=init();
+    </script>
+</form>
+
+</body>
+</html>
