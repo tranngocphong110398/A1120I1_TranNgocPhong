@@ -6,12 +6,12 @@
 </head>
 <body>
 <form>
-    <input type="text" id="so" width="600px" height="50px">
+    <input type="text" id="month" width="600px" height="50px" name="thang">
     <input type="button" value="tinh so ngay " onclick="check()">
 </form>
 <script>
-    let a=parseInt(document.getElementById("so"));
-function check() {
+    function check() {
+    let a=parseInt(document.getElementById("month").value);
     switch (a) {
         case 1:
         case 3:
@@ -20,25 +20,26 @@ function check() {
         case 8:
         case 10:
         case 12:
-            document.write("thang"+a+"co"+31);
-        break;
+            // return 31;
+            // alert("thang"+a+"co"+31+"Ngay");
+            document.write("thang "+a+" co "+31+" ngay");
+            break;
         case 4:
         case 6:
         case 9:
         case 11:
-            document.write("thang"+a+"co"+30);
-        break;
+            // return 30;
+            document.write("thang "+a+" co "+30);
+            break;
         case 2:
-            document.write("thang"+a+"co"+29);
-        break;
-            // if (isCheck(nam))
-            //     return 29;
-            // else
-            //     return 28;
+            // return 29;
+            document.write("thang  "+a+" co "+29+" hoac "+30+" ngay ");
+            break;
         default:
+            // return 0;
             document.write("khong co thang nay");
     }
-}
+    }
 </script>
 </body>
 </html>
