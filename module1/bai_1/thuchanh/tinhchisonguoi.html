@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh chi so nguoi </title>
+</head>
+<body>
+<script>
+    let w,d,bmi;
+    w=parseFloat(prompt("nhap vao can nang"));
+    d=parseFloat(prompt("nhap vao chieu cao"));
+    alert(bmi=w/(d*2));
+    if (bmi<18.5) document.write("Underweight");
+    else if (bmi<25.0) document.write("Normal");
+    else if (bmi<30.0) document.write("Overweight");
+    else document.write("Obese");
+</script>
+</body>
+</html>
