@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GOOD CHEAP FAST</title>
+</head>
+<body>
+<!--<label style="width: 500px" id="4" onmouseover="mouseOver()" onmouseout="mouseOut()">LẦMLSDMALSDALSDALSDMASDLAMSDLMASLDMALSDM</label>-->
+<!--<br>-->
+<input type="checkbox" style="width: 500px;height: 50px" id="good" onclick="setColor()">
+<br>
+<input type="checkbox" style="width: 500px;height: 50px" id="fast">
+<br>
+<input type="checkbox" style="width: 500px;height: 50px" id="cheap">
+<script>
+    document.getElementById("good").addEventListener("mouseOver",mouseOver);
+    document.getElementById("good").addEventListener("mouseOut",mouseOut);
+
+    document.getElementById("2").addEventListener("mouseOver",mouseOver);
+    document.getElementById("2").addEventListener("mouseOut",mouseOut);
+
+    document.getElementById("3").addEventListener("mouseOver",mouseOver);
+    document.getElementById("3").addEventListener("mouseOut",mouseOut);
+
+    // document.getElementById("4").addEventListener("mouseOver",mouseOver);
+    // document.getElementById("4").addEventListener("mouseOut",mouseOut);
+    function mouseOver() {
+    document.getElementById("1").style.background="green";
+    document.getElementById("2").style.background="blue";
+    document.getElementById("3").style.background="red";
+    // document.getElementById("4").style.background="red";
+    }
+    function mouseOut() {
+    document.getElementById("1").style.background="black";
+    document.getElementById("2").style.background="black";
+    document.getElementById("3").style.background="black";
+    // document.getElementById("4").style.background="black";
+    }
+    var count=1;
+    function setColor(good, color){
+        var property = document.getElementById(good);
+        if (count == 0){
+            property.style.backgroundColor = "red";
+            count=1;
+        }
+        else{
+            property.style.backgroundColor = "black";
+            count=0;
+        }
+
+    }
+</script>
+</body>
+</html>
