@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GAME</title>
+</head>
+<body>
+<form>
+    <input style="width: 300px;background: lightskyblue;font-size: 50px;color: white" height="50" type="button" value="choi" id="play" onclick="check()">
+</form>
+<script>
+function check() {
+    let fromnumber=parseInt(prompt("nhap vao so bat dau"));
+    let tonumber=parseInt(prompt("nhap vao so ket thuc"));
+    let d=parseInt(prompt("nhập vào số bạn muốn đoán"));
+    c=Math.round(Math.random()*1000);
+    if (c==d){
+        alert("chúc mừng");
+    }
+    if (c<fromnumber){
+        alert("số nhập vào bé hơn khoảng đã nhập");
+    }
+    if (c>tonumber){
+        alert("số nhập vào lớn hơn khoảng đã nhập");
+    }
+}
+</script>
+
+</body>
+</html>
