@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ArraySimple</title>
+</head>
+<body>
+<script>
+    let arr=["toyota","suzuki","SH"];
+    for (let i=0;i<arr.length;i++){
+        document.write("index  = "+i+" value = "+arr[i]);
+        document.write("<br>");
+    }
+    //độ dài của mảng
+    let countarray=arr.length
+    document.write("độ dài của mảng là : "+countarray);
+    //thêm phần tử vào mảng
+    //Hàm push() sẽ thêm một phần tử mới vào phần cuối của mảng.
+    arr.push("KIA");
+    document.write(arr);
+    //thêm bằng unshift :::Hàm unshift() sẽ thêm một phần tử mới và phần đầu của mảng.
+    arr.unshift("FERARI");
+    document.write(arr);
+    //xóa phần tử mảng
+    //Hàm pop() sẽ lấy đi phần tử cuối cùng của mảng.
+    let deletepop=arr.pop();
+    document.write(arr.length);
+    //Hàm shift() sẽ lấy đi phần tử đầu tiên của mảng.
+    let  deleteshift=arr.shift();
+    document.write(arr.length);
+    //Hàm sort() sẽ giúp sắp xếp các phần tử của mảng theo một trật tự nhất định.
+    document.write(arr.sort());
+    //đảo ngược mảng
+    document.write(arr.reverse());
+
+</script>
+</body>
+</html>

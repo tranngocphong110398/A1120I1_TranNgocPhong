@@ -14,3 +14,11 @@ input{
 text{
     font-size: 50px;
 }
+#result{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+}
+form{
+    display: flex;
+}
