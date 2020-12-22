@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo Ngược Mảng</title>
+</head>
+<body>
+<script>
+    let numberarray=[1,2,3,4,5,6,7,8,9,10];
+    for (let i=0;i<numberarray.length;i++){
+        document.write(numberarray[i]+",");
+    }
+    document.write("<br>");
+    document.write(numberarray.reverse());
+
+    document.write("<br>");
+    //cách 2:
+    let first=0;
+    let last=numberarray.length-1;
+    while (first<last){
+        let b=numberarray[first];
+        numberarray[first]=numberarray[last];
+        numberarray[last]=b;
+        first++;
+        last--;
+    }
+    document.write(numberarray);
+</script>
+</body>
+</html>
