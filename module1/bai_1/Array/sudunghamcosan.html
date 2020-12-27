@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sudunghamcosan</title>
+</head>
+<body>
+<script>
+    // // //bài 1
+    // let myColor = ["Red", "Green", "White", "Black"];
+    // myColor.join(",");
+    // document.write(myColor);
+    // //bài 2
+    // let number=prompt("nhập vào các số ");
+    // let str=number.toString();
+    // let bai2=[str[0]];
+    // for (let i=1;i<str.length;i++){
+    //     if (str[i]%2==0){
+    //         bai2.push('-',str[i]);
+    //     }
+    //     else {
+    //         bai2.push(str[i]);
+    //     }
+    // }
+    // document.write(bai2.join(''));
+    //Bài 3
+    let str = prompt("nhap vao cac chu ");
+    const UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    let result = [];
+
+    for(let x=0; x<str.length; x++)
+    {
+        if(UPPER.includes(str[x]))
+        {
+            result.push(str[x].toLowerCase());
+        }
+        else if(LOWER.includes(str[x]))
+        {
+            result.push(str[x].toUpperCase());
+        }
+        else
+        {
+            result.push(str[x]);
+        }
+    }
+    document.write(result.join(''));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm Trong Mảng</title>
+</head>
+<body>
+<script>
+    // //xóa phần tử trong mảng bắt đầu bằng vị trí dùng splice
+    // let arr=["tuan","phong","hai"];
+    // arr.splice(0,2);
+    // document.write(arr);
+    // //Concat để nối hai mảng
+    // let A=["CODE"];
+    // let B=["GYM"];
+    // let c=A.concat(B);
+    // document.write(c);
+    // //Hàm indexof để lấy ra vị trí của ký tự trong chuỗi và lấy ra vị trí của ptu trong mảng
+    // let d=["code"];
+    // let index=d.indexOf("o");
+    // document.write(index);
+    // document.write("<br>");
+    // document.write("<br>");
+    //Hàm Map dùng để thay đổi giá trị các thuộc tính của đối tượng trong mảng
+    let ana=[{
+        "id": 1,
+        "ten": "phu"
+    },
+        {
+        "id":2,
+        "ten":"phong"
+    }];
+    var k=ana.map(function (ana1) {
+        if (ana1.id==1){
+            ana1.ten=="phongeqweqweqwe";
+        }
+        return ana1;
+    });
+    document.write(k);
+</script>
+
+</body>
+</html>

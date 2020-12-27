@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Furama Resort Management App</title>
     <link rel="stylesheet" type="text/css" href="nhungcss.css">
-    <script type="text/javascript" src="hoankw.js"></script>
+    <script type="text/javascript" src="capjs1.js"></script>
 </head>
 <body>
 <form>
@@ -28,16 +28,16 @@
         <br>
         <br>
         <label>Address :</label>
-        <input style="margin-left: 110px" type="text" name="address" id="adress">
+        <input style="margin-left: 110px" type="text" name="address" id="address">
         <br>
         <br>
         <label>Customer Type :</label>
         <select id="customer" style="margin-left: 28px;width: 300px;height: 30px">
-            <option>Diamond</option>
-            <option>Platinum</option>
-            <option>Gold</option>
-            <option>Silver</option>
-            <option>Member</option>
+            <option id="2">Diamond</option>
+            <option id="3">Platinum</option>
+            <option id="4">Gold</option>
+            <option id="5">Silver</option>
+            <option id="6">Member</option>
         </select>
         <br>
         <br>
@@ -57,25 +57,25 @@
         <br>
         <label>Service Type :</label>
         <select id="service" style="margin-left: 53px;width: 300px;height: 30px">
-            <option>Villa</option>
-            <option>House</option>
-            <option>Room</option>
+            <option id="7">Villa</option>
+            <option id="8">House</option>
+            <option id="9">Room</option>
         </select>
         <br>
         <br>
         <label>Room Type :</label>
         <select id="room" style="margin-left: 68px;width: 300px;height: 30px">
-            <option>Vip</option>
-            <option>Business</option>
-            <option>Normal</option>
+            <option id="10">Vip</option>
+            <option id="11">Business</option>
+            <option id="12">Normal</option>
         </select>
         <br>
         <br>
 
-        <input type="button" value="ADD" name="add" id="add" onclick="asdasdas()">
+        <input type="button" value="ADD" name="add" id="add" onclick="addcustomer()">
     </div>
-    <div id="result">
-
+    <div>
+<p  id="result"></p>
     </div>
 </form>
 
